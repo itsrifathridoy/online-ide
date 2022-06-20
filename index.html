@@ -22,7 +22,12 @@
     <div class="container">
       <br />
       <label for="programing">Select Language</label>
-      <select name="programing" id="programing" class="form-select">
+      <select
+        name="programing"
+        id="programing"
+        class="form-select"
+        onchange="langChange()"
+      >
         <option selected value="c">C</option>
         <option value="cpp">C++</option>
         <option value="csharp">C#</option>
@@ -34,7 +39,15 @@
 
       <div class="row">
         <div class="col">
-          <textarea name="Editor" id="editor" cols="100" rows="13"></textarea>
+          <textarea name="Editor" id="editor" cols="100" rows="13">
+#include <stdio.h>
+int main() 
+{
+  //code
+  return 0;
+}
+            </textarea
+          >
         </div>
 
         <div class="col position-relative" id="result"></div>

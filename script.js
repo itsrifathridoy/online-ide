@@ -100,3 +100,74 @@ function loader()
     </button>`
   document.getElementById("result").style.display = "block";
 }
+
+
+function langChange()
+{
+    var select = document.getElementById("programing");
+    var lang = select.options[select.selectedIndex].value;
+    showDefaultCode(lang)
+}
+
+
+function showDefaultCode(lang)
+{
+    if(lang == "c")
+    {
+        document.getElementById("editor").value = 
+`#include <stdio.h>
+int main() 
+{
+    //code
+    return 0;
+}`
+
+    }
+    else if(lang == "cpp")
+    {
+        document.getElementById("editor").value = 
+`#include <stdio.h>
+#include <iostream>
+using namespace std;
+int main() {
+    cout<<"Hello World!";
+    return 0;
+}`
+
+    }
+    else if(lang == "php")
+    {
+        document.getElementById("editor").value = 
+`<?php
+    //code
+?>`
+
+    }
+    else if(lang == "csharp")
+    {
+        document.getElementById("editor").value = 
+`using System;
+
+public class GFG{
+	static public void Main (){
+		//Code
+	}
+}`
+
+    }
+    else if(lang == "python")
+    {
+        document.getElementById("editor").value = 
+`#code
+print("Hello World!")`
+
+    }
+    else if(lang == "python3")
+    {
+        document.getElementById("editor").value = 
+`#code
+print("Hello World!")`
+
+    }
+    
+}

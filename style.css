@@ -1,6 +1,7 @@
 p {
   width: 100%;
   height: auto;
+  min-height: 50px;
   max-height: 200px;
   overflow: auto;
   word-break: normal !important;
